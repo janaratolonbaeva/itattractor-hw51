@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className="App">
         <div><button type="button" onClick={this.changeNumbers}>New numbers</button></div>
-        <div>
+        <div className="coin-block">
           {this.state.coins.map((num, index) => <Coin nominal={num} key={index}/>)}
         </div>
       </div>
